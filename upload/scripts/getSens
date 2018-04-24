@@ -1,0 +1,2 @@
+# Simple utility script to extract actual sentence from full Moses output
+sed 's/[^|]*|||\([^|]*\)|||.*/\1/' $@

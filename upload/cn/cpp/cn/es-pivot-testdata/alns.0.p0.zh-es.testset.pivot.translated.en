@@ -1,0 +1,38 @@
+Alignment 1
+7439 meeting , on 11 May 2015 .
+the year 2015 7439 meeting , on 11 May .
+Line2Start:Length	Line1Start:Length	Module		Score
+2:1			6:1			0		1.0
+3:1			0:1			0		1.0
+4:1			1:1			0		1.0
+5:1			2:1			0		1.0
+6:1			3:1			0		1.0
+7:1			4:1			0		1.0
+8:1			5:1			0		1.0
+9:1			7:1			0		1.0
+
+Alignment 2
+7439e meeting , on 11 May 2015
+the year 2015 7439 meeting , on 11 May .
+Line2Start:Length	Line1Start:Length	Module		Score
+2:1			6:1			0		1.0
+4:1			1:1			0		1.0
+5:1			2:1			0		1.0
+6:1			3:1			0		1.0
+7:1			4:1			0		1.0
+8:1			5:1			0		1.0
+
+Alignment 3
+7439-е meeting , on 11 May , the year 2015 .
+the year 2015 7439 meeting , on 11 May .
+Line2Start:Length	Line1Start:Length	Module		Score
+0:1			7:1			0		1.0
+1:1			8:1			0		1.0
+2:1			9:1			0		1.0
+4:1			1:1			0		1.0
+5:1			2:1			0		1.0
+6:1			3:1			0		1.0
+7:1			4:1			0		1.0
+8:1			5:1			0		1.0
+9:1			10:1			0		1.0
+

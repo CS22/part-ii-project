@@ -1,0 +1,9 @@
+Requires various tools, not limited to Moses (SMT Toolkit), OpenFST (C++ FST Library) and METEOR (word aligner)
+
+Compiling with OpenFST (is independent of other stages) looks like:
+	g++ cn.cpp process_meteor.cpp -ldl /usr/local/lib/libfst.so -std=c++11
+
+For the Moses scripts,
+	PJ must be set to project directory, containing corpus, working, lm folder hierachies 
+	MO must be set to mosesdecoder directory
+	MOSES must be set to the Moses decoder executlable ($MO/bin/moses)

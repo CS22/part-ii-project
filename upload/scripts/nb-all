@@ -1,0 +1,34 @@
+#!/bin/bash
+
+## Script for calling Moses' decoder using n-best 
+## on a all langauge pairs
+
+set -e
+
+WORKROOTDIR=/dd/working/unpc
+cd $WORKROOTDIR
+for PLANG in ar es fr ru zh; do
+  DIR=nbest.$PLANG.pivot
+  mkdir $DIR
+  cd $DIR
+  for SLANG in ar es fr ru zh; do
+    if [ $SLANG != $PLANG ]; then
+      mkdir $SLANG
+      cd $SLANG
+      #Usage: nbest.sh <S-P ini> <P-T ini> <translation name> <n> <source file> <ref file>
+      nbest.sh \
+        $WORKROOTDIR/p0.$SLANG-$PLANG/moses-compact.ini \
+        $WORKROOTDIR/p0.$PLANG-en/moses-compact.ini \
+        nbest.$SLANG-$PLANG-en \
+        5 \
+        /dd/corpus/unpc/testset/testset.true.$SLANG \
+        /dd/corpus/unpc/testset/testset.true.en
+
+      cd ..
+
+    fi
+  done
+
+  cd ..
+
+done
